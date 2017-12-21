@@ -1,0 +1,72 @@
+﻿.channel-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: box;
+    display: -webkit-box;
+    box-align: center;
+    -webkit-box-align: center;
+    box-pack: center;
+    -webkit-box-pack: center;
+    padding: .15rem 0
+}
+
+    .channel-header .logo {
+        width: .8rem;
+        padding: 0 .23rem;
+        box-sizing: border-box
+    }
+
+        .channel-header .logo img {
+            width: auto;
+            height: .34rem
+        }
+
+    .channel-header .login {
+        display: block;
+        width: .8rem;
+        padding: 0 .15rem;
+        white-space: nowrap;
+        box-sizing: border-box
+    }
+
+        .channel-header .login .user {
+            width: .5rem
+        }
+
+            .channel-header .login .user.state1 {
+                width: .4rem
+            }
+
+            .channel-header .login .user img {
+                width: 100%;
+                height: auto
+            }
+
+    .channel-header .search_bar {
+        line-height: .34rem;
+        background: url(/component/header/img/search333_5ab6d3c.png) no-repeat;
+        background-size: 101% 101%;
+        width: 5.6rem;
+        height: .53rem;
+        border-radius: .05rem;
+        box-sizing: border-box
+    }
+
+        .channel-header .search_bar > a {
+            display: block;
+            padding: .12rem .6rem .1rem
+        }
+
+        .channel-header .search_bar .text {
+            font-size: .26rem;
+            color: #9C9C9C
+        }
+
+        .channel-header .search_bar .icon-search {
+            font-size: .4rem;
+            color: #e58335;
+            padding-right: .1rem
+        }

@@ -1,0 +1,70 @@
+﻿.fixed-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: box;
+    display: -webkit-box;
+    height: .84rem;
+    box-align: center;
+    -webkit-box-align: center;
+    padding: 0 .2rem;
+    background-color: rgba(255,255,255,0);
+    z-index: 10
+}
+
+    .fixed-header .left {
+        position: absolute;
+        top: .3rem;
+        left: .3rem
+    }
+
+        .fixed-header .left a {
+            display: block
+        }
+
+        .fixed-header .left .ib {
+            width: .44rem;
+            height: .44rem
+        }
+
+    .fixed-header .tit {
+        -webkit-box-flex: 1;
+        box-flex: 1;
+        width: 100%
+    }
+
+        .fixed-header .tit h2 {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            line-height: .84rem
+        }
+
+        .fixed-header .tit span {
+            font-size: .3rem;
+            color: #666;
+            font-weight: 400
+        }
+
+    .fixed-header .right {
+        position: absolute;
+        top: .3rem;
+        right: .3rem
+    }
+
+        .fixed-header .right .icon {
+            color: #999
+        }
+
+        .fixed-header .right .ib {
+            width: .44rem;
+            height: .44rem
+        }
+
+        .fixed-header .right a {
+            display: block
+        }

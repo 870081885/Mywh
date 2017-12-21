@@ -1,0 +1,12 @@
+﻿.gmu-media-detect {
+    -webkit-transition: width 0.001ms;
+    width: 0;
+    position: relative;
+    bottom: -999999px;
+}
+
+@media screen and (width: 400px) {
+    #gmu-media-detect0 {
+        width: 100px;
+    }
+}

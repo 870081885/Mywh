@@ -1,0 +1,75 @@
+﻿.index-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: box;
+    display: -webkit-box;
+    box-align: center;
+    -webkit-box-align: center;
+    box-pack: center;
+    -webkit-box-pack: center;
+    padding: .15rem 0;
+    background-color: #fafafa
+}
+
+.index-header .logo {
+    width: 1rem;
+    padding: 0 .25rem;
+    box-sizing: border-box
+}
+
+    .index-header .logo img {
+        width: .5rem;
+        height: auto
+    }
+
+.index-header .login {
+    display: block;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.index-header .login .text {
+    font-size: .28rem;
+    text-align: center;
+    color: #969696;
+    margin: 0 .22rem
+}
+
+.index-header .login .user {
+    width: 1rem
+}
+
+.index-header .login .user img {
+    width: .3rem;
+    height: auto
+}
+
+.index-header .search_bar {
+    line-height: .34rem;
+    background: url(/assets/mi/images/search.png) no-repeat;
+    background-size: 101% 101%;
+    width: 5.2rem;
+    height: .53rem;
+    border-radius: .05rem;
+    border: 1px solid #e5e5e5
+}
+
+.index-header .search_bar > a {
+    display: block;
+    padding: .1rem .6rem
+}
+
+.index-header .search_bar .text {
+    font-size: .26rem;
+    color: rgba(0,0,0,.3)
+}
+
+.index-header .search_bar .icon-search {
+    font-size: .4rem;
+    color: #e58335;
+    padding-right: .1rem
+}

@@ -1,0 +1,303 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9394396C-47CA-4CAD-AE8B-7F64A1EEEC63}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shop</RootNamespace>
+    <AssemblyName>Shop</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\mi\css\slickSlider.css" />
+    <Content Include="assets\mi\images\footer.png" />
+    <Content Include="assets\mi\css\demo1.css" />
+    <Content Include="assets\mi\css\demo10.css" />
+    <Content Include="assets\mi\css\demo11.css" />
+    <Content Include="assets\mi\css\demo12.css" />
+    <Content Include="assets\mi\css\demo13.css" />
+    <Content Include="assets\mi\css\demo14.css" />
+    <Content Include="assets\mi\css\demo15.css" />
+    <Content Include="assets\mi\css\demo2.css" />
+    <Content Include="assets\mi\css\demo3.css" />
+    <Content Include="assets\mi\css\demo4.css" />
+    <Content Include="assets\mi\css\demo5.css" />
+    <Content Include="assets\mi\css\demo6.css" />
+    <Content Include="assets\mi\css\demo7.css" />
+    <Content Include="assets\mi\css\demo8.css" />
+    <Content Include="assets\mi\css\footer.css" />
+    <Content Include="assets\mi\images\hdp1.webp" />
+    <Content Include="assets\mi\images\hdp2.webp" />
+    <Content Include="assets\mi\images\hdp3.jpg" />
+    <Content Include="assets\mi\images\img1.png" />
+    <Content Include="assets\mi\images\img2.jpg" />
+    <Content Include="assets\mi\images\logo.png" />
+    <Content Include="assets\mi\images\search.png" />
+    <Content Include="assets\mi\images\top.png" />
+    <Content Include="category.aspx" />
+    <Content Include="content.aspx" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="内容页\6cf6ba32-4311-f155-9c3b-08e4555c4f6a.webp" />
+    <Content Include="内容页\7dff9bd7-7afe-e2dc-f927-e4638c6978c3.webp" />
+    <Content Include="内容页\8b0d5b7b-01bd-7660-e999-67ee106c50df.webp" />
+    <Content Include="内容页\c7a954a9-75eb-09e6-6a74-931efc7d35f6.webp" />
+    <Content Include="内容页\hm.js.下载" />
+    <Content Include="内容页\jquery.statData.min.js.下载" />
+    <Content Include="内容页\jweixin-1.0.0_c1c3160.js.下载" />
+    <Content Include="内容页\mod-store_dd2d846.js.下载" />
+    <Content Include="内容页\mstr.js%281%29.下载" />
+    <Content Include="内容页\mstr.js%282%29.下载" />
+    <Content Include="内容页\mstr.js%283%29.下载" />
+    <Content Include="内容页\mstr.js%284%29.下载" />
+    <Content Include="内容页\mstr.js%285%29.下载" />
+    <Content Include="内容页\mstr.js%286%29.下载" />
+    <Content Include="内容页\mstr.js%287%29.下载" />
+    <Content Include="内容页\mstr.js%288%29.下载" />
+    <Content Include="内容页\mstr.js.下载" />
+    <Content Include="内容页\xmst.js.下载" />
+    <Content Include="分类\137588b3-37b8-ae0a-09a2-46d70ae95a46!500x200.webp" />
+    <Content Include="分类\28237c8e-af58-aaa4-dee0-6c403c9e7c5b!500x200.webp" />
+    <Content Include="分类\2fce745c-1bdc-db84-42dc-56093088a34a!500x200.webp" />
+    <Content Include="分类\5168518d-d359-be70-a7fd-5c3c4433409e!500x200.webp" />
+    <Content Include="分类\6f692f20-8a4f-764e-384a-23c98e9e7ec0!500x200.webp" />
+    <Content Include="分类\7224b715-22f2-b243-5d56-8597a0f56dda!500x200.webp" />
+    <Content Include="分类\7e379776-164c-1ce8-0b6a-284d0b018739!500x200.webp" />
+    <Content Include="分类\8ad246f2-b5ba-e30d-772c-7e023b0fc17f!500x200.webp" />
+    <Content Include="分类\e10e873f-5aa2-e3ae-336a-8b75748a45a4!500x200.webp" />
+    <Content Include="分类\ef9e8868-06f4-f53c-b98a-f1691772f79f!500x200.webp" />
+    <Content Include="分类\f36e2436-a2f1-2ab7-d630-fd5d511545b1!500x200.webp" />
+    <Content Include="分类\ff205815-61e1-ef9f-d7d2-5650f1224c4b!500x200.webp" />
+    <Content Include="分类\hm.js.下载" />
+    <Content Include="分类\jquery.statData.min.js.下载" />
+    <Content Include="分类\jweixin-1.0.0_c1c3160.js.下载" />
+    <Content Include="分类\mod-store_dd2d846.js.下载" />
+    <Content Include="分类\mstr.js%281%29.下载" />
+    <Content Include="分类\mstr.js%2810%29.下载" />
+    <Content Include="分类\mstr.js%2811%29.下载" />
+    <Content Include="分类\mstr.js%2812%29.下载" />
+    <Content Include="分类\mstr.js%2813%29.下载" />
+    <Content Include="分类\mstr.js%2814%29.下载" />
+    <Content Include="分类\mstr.js%2815%29.下载" />
+    <Content Include="分类\mstr.js%2816%29.下载" />
+    <Content Include="分类\mstr.js%2817%29.下载" />
+    <Content Include="分类\mstr.js%282%29.下载" />
+    <Content Include="分类\mstr.js%283%29.下载" />
+    <Content Include="分类\mstr.js%284%29.下载" />
+    <Content Include="分类\mstr.js%285%29.下载" />
+    <Content Include="分类\mstr.js%286%29.下载" />
+    <Content Include="分类\mstr.js%287%29.下载" />
+    <Content Include="分类\mstr.js%288%29.下载" />
+    <Content Include="分类\mstr.js%289%29.下载" />
+    <Content Include="分类\mstr.js.下载" />
+    <Content Include="分类\xmst.js.下载" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="demo1.css" />
+    <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="内容页\52cc4721e1eaed5af47af693906205c8.jpg" />
+    <Content Include="内容页\back_48bef14.png" />
+    <Content Include="内容页\c35ee0fb-cfed-fd28-e724-64eb07958fb9!540x540.jpg" />
+    <Content Include="内容页\close_bafbb92.png" />
+    <Content Include="内容页\icon_back_n.png" />
+    <Content Include="内容页\icon_dui_b333f13.png" />
+    <Content Include="内容页\icon_tan_3c690ff.png" />
+    <Content Include="内容页\liveicon_0b5c943.png" />
+    <Content Include="内容页\share_18c55d7.png" />
+    <Content Include="内容页\top_1a2bcd9.png" />
+    <Content Include="分类\068cd93230bb3d93c80f42b0dba6d5f4.png" />
+    <Content Include="分类\0ceafb0119fb20b519f422240ff7bdb0.png" />
+    <Content Include="分类\0ed187521ff28e6616798c1c990c1788.png" />
+    <Content Include="分类\1d90ee625e15c227e848c81336a0f8d1.jpg" />
+    <Content Include="分类\3306b225e027970a1a369fd6b8be4fc7.png" />
+    <Content Include="分类\4621fee79520fd01d8edfe18d0e67a40.jpg" />
+    <Content Include="分类\517e41297a52762b3810e8a31914ee22.png" />
+    <Content Include="分类\62c712fb35355f8f3778ccc4b4b25503.png" />
+    <Content Include="分类\661f8ad7f2014f352e3a47fbb5ee2939.png" />
+    <Content Include="分类\88bc9af6c3bd4e7a695060fe628971e8.png" />
+    <Content Include="分类\8904f343b2dffb29ee608c5a0ddd50c2.png" />
+    <Content Include="分类\a68d31ccb3ac07f289abc39a5682f334.png" />
+    <Content Include="分类\ce5bde321264c4f1fc898b80ae4ba341.png" />
+    <Content Include="分类\efb682b76a29411fd26d990971992c3e.png" />
+    <Content Include="分类\f0d7f8167e14f0c70fd84aa6cb321cb6.png" />
+    <Content Include="分类\f0e283f74845939fd24d53f7fb1d35c1.png" />
+    <Content Include="分类\icon_back_n.png" />
+    <Content Include="首页\027bef429008df94de494c13c6c98f05.jpg" />
+    <Content Include="首页\0393eb3f-a1af-9be1-3d36-2a90d649e55a.webp" />
+    <Content Include="首页\07eb8edd-aaa2-e614-c833-4ba59e6f2b19.webp" />
+    <Content Include="首页\11739bc5-74ec-a426-0401-a055ded93973!720x80.webp" />
+    <Content Include="首页\156bfe8a-f216-3fba-dbc8-76065507b4ed!358x252.webp" />
+    <Content Include="首页\2219a47a-75e6-302b-cc87-f4ef941abfba!360x505.webp" />
+    <Content Include="首页\2de44281cec804e3fbb91f336350cb84.jpg" />
+    <Content Include="首页\2e443a9b-34be-19c9-16b0-29297f864acb.webp" />
+    <Content Include="首页\2f38100b-0fb0-babe-aa55-afb156780479!360x505.webp" />
+    <Content Include="首页\36de2556-a945-22c6-abf5-0d4425c12c81.webp" />
+    <Content Include="首页\3f392af3206de6bee0b4c5c88036e88b.jpg" />
+    <Content Include="首页\43912258-85b0-cb72-355d-b7e193979fd9!720x80.webp" />
+    <Content Include="首页\5343a3c88417076d8ca5f2caaeea42c6.jpg" />
+    <Content Include="首页\66a37503-31bb-38d2-001a-11caca1ba532!360x505.webp" />
+    <Content Include="首页\698e0b6c-9aae-72fb-f9ae-f38c2378e898!358x252.webp" />
+    <Content Include="首页\7f7526f7-6d8c-ac62-36ad-16074020bd9b.webp" />
+    <Content Include="首页\a379499885bc8112acc4cc27cd091642.png" />
+    <Content Include="首页\a9929531-6736-5395-4ad2-f54c0c8a7976!360x505.webp" />
+    <Content Include="首页\ac6fbd40-c14a-b1d4-d6fc-226f9cefeada!358x508.webp" />
+    <Content Include="首页\ad04a4704313b6178b2081d813798dec.jpg" />
+    <Content Include="首页\b0dbfd61092f3f13d5f57b753c057520.jpg" />
+    <Content Include="首页\bfc79663-5396-21c0-aba7-8b3d186869fa!360x505.webp" />
+    <Content Include="首页\c21f909e46d307623279de7bc2706f56.png" />
+    <Content Include="首页\cf4ff323-bf00-be6f-e993-832385f28b12!720x80.webp" />
+    <Content Include="首页\d1639bf3-c4aa-60d4-5328-fe27ab6f2826.webp" />
+    <Content Include="首页\d42246a2-ea4c-b4be-c723-c1ca46dab08e!720x360.webp" />
+    <Content Include="首页\e2344614c42eae87c4636d2c7a708e5b.png" />
+    <Content Include="首页\e6185981-a300-b8da-7137-b6c41f799bfe.webp" />
+    <Content Include="首页\e8426b74-f8e1-6f92-e704-8f25873fb64f!360x505.webp" />
+    <Content Include="首页\ff48e46a-12b3-d01a-e276-d8b7176124ce.webp" />
+    <Content Include="首页\hm.js" />
+    <Content Include="首页\jquery.statData.min.js" />
+    <Content Include="首页\jweixin-1.0.0_c1c3160.js" />
+    <Content Include="首页\logo_121d4a6.png" />
+    <Content Include="首页\mod-store_dd2d846.js" />
+    <Content Include="首页\mstr%281%29.js" />
+    <Content Include="首页\mstr%282%29.js" />
+    <Content Include="首页\mstr%283%29.js" />
+    <Content Include="首页\mstr.js" />
+    <Content Include="首页\sczb_ed0a4af.png" />
+    <Content Include="首页\top_1a2bcd9.png" />
+    <Content Include="首页\xmst.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="category.aspx.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="category.aspx.designer.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content.aspx.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content.aspx.designer.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\css\" />
+    <Folder Include="assets\mi\js\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28582</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:28582/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
