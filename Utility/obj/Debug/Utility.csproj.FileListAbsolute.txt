@@ -3,3 +3,8 @@ C:\Users\梦影雾花\Desktop\vs2017\Mywh\Utility\bin\Debug\Utility.pdb
 C:\Users\梦影雾花\Desktop\vs2017\Mywh\Utility\obj\Debug\Utility.dll
 C:\Users\梦影雾花\Desktop\vs2017\Mywh\Utility\obj\Debug\Utility.pdb
 C:\Users\梦影雾花\Desktop\vs2017\Mywh\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+C:\Users\梦影雾花\Desktop\github\Mywh\Utility\bin\Debug\Utility.dll
+C:\Users\梦影雾花\Desktop\github\Mywh\Utility\bin\Debug\Utility.pdb
+C:\Users\梦影雾花\Desktop\github\Mywh\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+C:\Users\梦影雾花\Desktop\github\Mywh\Utility\obj\Debug\Utility.dll
+C:\Users\梦影雾花\Desktop\github\Mywh\Utility\obj\Debug\Utility.pdb

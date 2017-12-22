@@ -23,6 +23,7 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
+
         #imagelightbox {
             position: fixed;
             z-index: 9999;
@@ -33,7 +34,7 @@
     </style>
 </head>
 
-<body>
+<body style="display: none;">
     <div id="abox">
     </div>
     <div class="page_spinner">
@@ -85,12 +86,19 @@
                                 <img src="images/nav1.png" alt="" usemap="#back" /><a href="demo.aspx#close">返回</a></span>
                             <div class="pad">
                                 <h2>爱情</h2>
-                                爱情是什么，也许我不懂<br />
-                                但是我知道，爱一个人愿意去包容对方的一切。<br />
-                                也许，我不会说话，总惹你不开心；<br />
-                                也许，你听过许多的甜言蜜语；<br />
-                                但，在美丽的承诺，也只是一个美丽的泡影。<br />
-                                我不知道能为你做什么，但是，我知道一定会一直对你好。		
+                                <div class="relative scroll">
+                                    当你出现的那一刻，<br />
+                                    我的世界哗一下就变得绚丽多彩。<br />
+                                    因为你开心，所以我开心；<br />
+                                    因为你不开心，所以我会想办法逗你开心。<br />
+                                    可能我们彼此的距离太远，不敢轻易做下承诺，<br />
+                                    但是我相信：<br />
+                                    眼前解决不了的问题，<br />
+                                    都可交付未来，<br />
+                                    时间是个伟大的作者，<br />
+                                    他必将写出，最完美的答案。<br />
+                                    我爱你，小猪妹妹！<br />
+                                </div>
                             </div>
                         </li>
                         <li id="page_About">
@@ -109,12 +117,14 @@
                                         <p>&nbsp;&nbsp;&nbsp;&nbsp;就这样到了现在。</p>
                                     </div>
                                     <div>
-                                        <span>2017/11/11</span>
-                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;记得那天你对我说你喜欢我，</p>
-                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;我却不知道怎么说。</p>
-                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;我的心里告诉我不要管那么多，</p>
-                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;于是第二天对你说能做我女朋友吗？</p>
-                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;就这样到了现在。</p>
+                                        <span>2017/12/20</span>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;今天你突然不理我了，</p>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;我很惶恐，</p>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;是不是我哪里又做错了？</p>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;不要不理我好不好。</p>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;你总说是你离不开我，</p>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;可你知道吗，</p>
+                                        <p>&nbsp;&nbsp;&nbsp;&nbsp;我也离不开你……</p>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +215,7 @@
             <!--content end-->
         </div>
     </div>
-    <audio id="myAudio" src="youDianTian.mp3" <%--autoplay="autoplay"--%> loop="loop" preload="auto" ></audio>
+    <audio id="myAudio" src="youDianTian.mp3" autoplay="autoplay" loop="loop" preload="auto"></audio>
     <img src="images/bg_content.png" alt="" class="bg_cont" />
 
     <script src="/assets/js/jquery.min.js"></script>
@@ -217,13 +227,16 @@
     <script src="mCustomScrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="js/content_switch.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script src="../../assets/plugins/layer/layer.js"></script>
     <script type="text/javascript">
         $(function () {
+            layer.load();
+
             $('.page_spinner').fadeOut();
             $('body').css({ overflow: 'visible' });
-            ////修改时光沙漏时间
-            //var offsetX = $("#loveHeart").width() / 2;
-            //var offsetY = $("#loveHeart").height() / 2 - 55;
+            //修改时光沙漏时间
+            var offsetX = $("#loveHeart").width() / 2;
+            var offsetY = $("#loveHeart").height() / 2 - 55;
             //播放音乐
             audioAutoPlay("myAudio");
             //滚动
@@ -239,20 +252,21 @@
                     quitOnEnd: false,                                   // bool;            看完最后一张图片退出
                     quitOnImgClick: false,                              // bool;            浏览图片点击退出
                     quitOnDocClick: true,                               // bool;            浏览图片点击除了图片的任何地方退出
-                });          
+                });
             //计算时间差
             var start = new Date('2017/11/12');
             var now = null;
             setInterval(function () {
                 now = new Date();
-                $("#elapseClock_day").text(parseInt((now - start) / (1000* 60 * 60 * 24)));
+                $("#elapseClock_day").text(parseInt((now - start) / (1000 * 60 * 60 * 24)));
                 $("#elapseClock_hour").text(parseInt((now - start) % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
                 $("#elapseClock_minute").text(parseInt((now - start) % (1000 * 60 * 60) / (1000 * 60)));
                 $("#elapseClock_second").text(parseInt((now - start) % (1000 * 60) / (1000)));
-            },1000);
-
+            }, 1000);
         });
         $(window).load(function () {
+            $("body").show();
+            layer.closeAll('loading');
             //右击菜单事件   
             document.oncontextmenu = function () {
                 alert('小猪猪，我爱你哟！');
@@ -275,28 +289,7 @@
                 play();
             }, false);
             document.addEventListener("touchstart", play, false);
-        }  
-
-        //var together = new Date();
-        //together.setFullYear(2014, 07, 07);
-        //together.setHours(17);
-        //together.setMinutes(0);
-        //together.setSeconds(0);
-        //together.setMilliseconds(0);
-
-        //setTimeout(function () {
-        //    adjustWordsPosition();
-        //    startHeartAnimation();
-        //}, 3000);
-
-        //timeElapse(together);
-        //setInterval(function () {
-        //    timeElapse(together);
-        //}, 500);
-
-        //adjustCodePosition();
-        //$("#code").typewriter();
-
+        }
 
     </script>
 
