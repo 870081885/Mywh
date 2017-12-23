@@ -274,18 +274,17 @@ $(window).load(function() {
          */
     }
 
-    var m_top=0, h_cont=730;
-    function centre() {
-        var h=$(window).height();
-        if (h>h_cont) {
-            m_top=(h-h_cont)/2+30;
-        } else {
-            m_top=30
-        }
-        $('.centre').stop().animate({paddingTop:m_top})
-
-    }
-    centre();
-    $(window).resize(centre);
+    //var m_top=0, h_cont=730;
+    //function centre() {
+    //    var h=$(window).height();
+    //    if (h>h_cont) {
+    //        m_top=(h-h_cont)/2+30;
+    //    } else {
+    //        m_top=30
+    //    }
+    //    $('.centre').stop().animate({paddingTop:m_top})
+        
+    //}
+    $('.centre').stop().animate({ paddingTop: 200 });
 
 })

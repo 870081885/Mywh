@@ -104,7 +104,8 @@
                         <li id="page_About">
                             <img src="images/bg_content.png" alt="" class="bg_cont" />
                             <span class="back">
-                                <img src="images/nav2.png" alt="" usemap="#back" /><a href="demo.aspx#close">返回</a></span>
+                                <img src="images/nav2.png" alt="" usemap="#back" /><a href="demo.aspx#close">返回</a>
+                            </span>
                             <div class="pad">
                                 <h2>记事</h2>
                                 <div class="relative scroll">
@@ -179,6 +180,18 @@
                                             <li style="line-height: 120px">
                                                 <a href="images/uploadimage/1.jpg" rel="prettyPhoto[gallery1]">
                                                     <img src="images/uploadimage/1.jpg" alt="" /></a>
+                                            </li>
+                                            <li style="line-height: 120px">
+                                                <a href="images/uploadimage/2.jpg" rel="prettyPhoto[gallery1]">
+                                                    <img src="images/uploadimage/2.jpg" alt="" /></a>
+                                            </li>
+                                            <li style="line-height: 120px">
+                                                <a href="images/uploadimage/3.jpg" rel="prettyPhoto[gallery1]">
+                                                    <img src="images/uploadimage/3.jpg" alt="" /></a>
+                                            </li>
+                                            <li style="line-height: 120px">
+                                                <a href="images/uploadimage/4.jpg" rel="prettyPhoto[gallery1]">
+                                                    <img src="images/uploadimage/4.jpg" alt="" /></a>
                                             </li>
                                         </ul>
                                     </div>

@@ -282,5 +282,8 @@ footer a:hover{}
 .signature{margin-top:10px;font-size:20px;font-style:italic}
 #copyright{text-align:center;width:100%;color:#666}
 
-.fancybox img{width:167px;height:130px}
+.fancybox img {
+    width: 92px;
+    height: 92px;
+}
 /* ============================= end forms ============================= */
